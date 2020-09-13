@@ -1,4 +1,4 @@
-module github.com/le-garden-fox/calc
+module github.com/le-garden-fox/lib-go-cal-protobuff
 
 go 1.14
 
