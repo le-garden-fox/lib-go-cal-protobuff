@@ -1,0 +1,18 @@
+syntax = "proto3";
+package calc;
+
+// this is the path folder name as well
+option go_package = "./calc/calcpb";
+
+
+message CalcRequest { 
+  int32 addendLeft=1;
+  int32 addendRight=2;
+}
+
+message CalcResponse { string result = 1; }
+
+service CalcService {
+  // define unary API
+  rpc Calc(CalcRequest) returns (CalcResponse) {};
+}
